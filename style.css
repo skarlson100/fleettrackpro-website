@@ -1277,3 +1277,273 @@ h1, h2, h3, h4 {
     .section-title { font-size: clamp(38px, 10vw, 56px); }
     .pricing-grid { max-width: 100%; }
 }
+
+/* 16. PRE-LAUNCH HERO BLOCK
+   ============================================================================= */
+.hero-prelaunch {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.prelaunch-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+}
+
+.prelaunch-body {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+/* 17. HERO CTA — SINGLE BUTTON
+   ============================================================================= */
+.hero-cta-btn {
+    padding: 14px 36px;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+}
+
+/* 18. HERO PHONE SCREENSHOT
+   ============================================================================= */
+.hero-phone-frame {
+    height: 540px;
+}
+
+.phone-screenshot {
+    flex: 1;
+    width: 100%;
+    min-height: 0;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
+/* 19. SCREENSHOT GALLERY
+   ============================================================================= */
+.screenshots {
+    padding: 100px 0;
+    background:
+        radial-gradient(ellipse 70% 50% at 50% 0%, rgba(241,90,36,0.04) 0%, transparent 60%),
+        var(--bg-primary);
+}
+
+.screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    align-items: start;
+}
+
+.screenshot-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.gallery-phone-outer {
+    position: relative;
+    display: inline-block;
+}
+
+.gallery-phone-frame {
+    width: 190px;
+    height: 400px;
+}
+
+.screenshot-caption {
+    text-align: center;
+}
+
+.caption-heading {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.caption-body {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* 20. PRICING TRIAL BANNER
+   ============================================================================= */
+.pricing-trial-banner {
+    background: rgba(241, 90, 36, 0.08);
+    border: 1px solid var(--accent-border);
+    border-radius: var(--radius-md);
+    padding: 18px 24px;
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.55;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.pricing-trial-banner strong {
+    color: var(--text-primary);
+}
+
+/* 21. PRICING GRID — 4 TIERS (overrides base 3-column rule)
+   ============================================================================= */
+.pricing-grid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: none;
+}
+
+/* 22. FOUNDER STORY
+   ============================================================================= */
+.founder-story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.founder-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.founder-body p {
+    font-size: 16px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.founding-members-box {
+    background: var(--bg-card);
+    border: 1px solid var(--accent-border);
+    border-radius: var(--radius-lg);
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.founding-title {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    letter-spacing: 0.02em;
+    color: var(--text-primary);
+}
+
+.founding-body {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* 23. WAITLIST SECTION
+   ============================================================================= */
+.waitlist {
+    padding: 100px 0;
+    background: var(--bg-deep);
+    border-top: 1px solid var(--border-subtle);
+}
+
+.waitlist-form {
+    max-width: 560px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.waitlist-input-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.waitlist-input {
+    flex: 1;
+    background: var(--bg-card);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-sm);
+    padding: 12px 16px;
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--text-primary);
+    outline: none;
+    transition: border-color var(--t) var(--ease);
+}
+
+.waitlist-input::placeholder {
+    color: var(--text-muted);
+}
+
+.waitlist-input:focus {
+    border-color: var(--accent-border);
+    box-shadow: 0 0 0 3px rgba(241, 90, 36, 0.1);
+}
+
+.waitlist-disclaimer {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+/* 24. RESPONSIVE — NEW SECTIONS
+   ============================================================================= */
+@media (max-width: 1200px) {
+    .screenshots-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    .pricing-card--featured {
+        transform: none;
+        order: -1;
+    }
+}
+
+@media (max-width: 900px) {
+    .founder-story {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 720px) {
+    .gallery-phone-frame {
+        width: 150px;
+        height: 316px;
+    }
+
+    .waitlist-input-row {
+        flex-direction: column;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 520px) {
+    .screenshots-grid {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .gallery-phone-frame {
+        width: 200px;
+        height: 422px;
+    }
+}
