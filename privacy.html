@@ -195,7 +195,7 @@
         <ul class="nav-links" id="navLinks">
             <li><a href="/#features">Features</a></li>
             <li><a href="/#pricing">Pricing</a></li>
-            <li><a href="/#testimonials">Reviews</a></li>
+            <li><a href="/#testimonials">Our story</a></li>
             <li><a href="privacy.html">Privacy</a></li>
         </ul>
         <div class="nav-actions">
@@ -216,9 +216,9 @@
             <h1>Privacy Policy</h1>
             <p>How FleetTrack Pro collects, uses and protects your personal information, in compliance with the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles (APPs).</p>
             <div class="privacy-meta">
-                <span><strong>Effective date:</strong> 11 May 2026</span>
-                <span><strong>Last updated:</strong> 11 May 2026</span>
-                <span><strong>Version:</strong> 1.0</span>
+                <span><strong>Effective date:</strong> 25 May 2026</span>
+                <span><strong>Last updated:</strong> 25 May 2026</span>
+                <span><strong>Version:</strong> 2.0</span>
             </div>
         </div>
 
@@ -250,10 +250,10 @@
 
                 <section id="about">
                     <h2>1. About This Policy</h2>
-                    <p>FleetTrack Pro Pty Ltd (ABN XX XXX XXX XXX) ("<strong>we</strong>", "<strong>us</strong>", "<strong>our</strong>") operates the FleetTrack Pro mobile application and website (collectively, the "<strong>Service</strong>"). This Privacy Policy explains how we handle personal information in accordance with the <em>Privacy Act 1988</em> (Cth) and the thirteen Australian Privacy Principles (APPs).</p>
+                    <p>Cajon Outdoor Equipment Pty Ltd (ACN 673 204 558) trading as Nightshift Systems ("<strong>we</strong>", "<strong>us</strong>", "<strong>our</strong>") operates the FleetTrack Pro mobile application and website (collectively, the "<strong>Service</strong>"). Cajon Outdoor Equipment Pty Ltd trading as Nightshift Systems is an Australian company based in Perth, Western Australia. This Privacy Policy explains how we handle personal information in accordance with the <em>Privacy Act 1988</em> (Cth) and the thirteen Australian Privacy Principles (APPs).</p>
                     <p>By using the Service, you consent to the collection, use and disclosure of your personal information as described in this Policy. If you do not agree, please do not use the Service.</p>
                     <div class="info-box">
-                        <p>If you are a resident of the European Economic Area, additional rights under the GDPR may apply. Please contact us at <a href="mailto:hello@fleettrackpro.com.au">hello@fleettrackpro.com.au</a> to discuss your specific rights.</p>
+                        <p>The Service is currently available to Australian customers only. We do not knowingly accept users located in the European Economic Area or the United Kingdom. If our service availability changes in the future, this Policy will be updated to reflect the relevant data protection obligations applicable to international users.</p>
                     </div>
                 </section>
 
@@ -302,7 +302,7 @@
                     </ul>
 
                     <h3>Payment Information</h3>
-                    <p>We do not store credit card details. Payment processing is handled entirely by Stripe, Inc. We receive only non-sensitive metadata (last 4 card digits, card brand, expiry month/year) required to display your billing information.</p>
+                    <p>Subscription payment processing for FleetTrack Pro is handled by Google Play Billing. We do not receive or store credit card details. Payment handling is managed entirely by Google through the Google Play Store.</p>
                 </section>
 
                 <section id="how-we-collect">
@@ -311,7 +311,6 @@
                     <ul>
                         <li><strong>Directly from you</strong> — when you create an account, add vehicles, log expenses or contact support</li>
                         <li><strong>Automatically</strong> — through the app when you use features such as GPS trip tracking, receipt scanning or push notifications</li>
-                        <li><strong>From third parties</strong> — vehicle registration data may be enriched from publicly available NEVDIS or state RMS data where you authorise us to do so</li>
                     </ul>
                     <p>We will not collect sensitive information (as defined in the Privacy Act) without your explicit consent, and we do not collect government identifiers (such as tax file numbers) except where required by law.</p>
                 </section>
@@ -324,7 +323,7 @@
                         <li>Process receipt images and extract expense data using AI (the images are not used to train third-party models without your consent)</li>
                         <li>Generate trip logs, service records and PDF reports on your behalf</li>
                         <li>Send service interval alerts, compliance reminders and account notifications</li>
-                        <li>Process subscription payments via Stripe</li>
+                        <li>Process subscription payments via Google Play Billing</li>
                         <li>Respond to support requests and communicate about your account</li>
                         <li>Detect, investigate and prevent fraud, security incidents and technical issues</li>
                         <li>Improve the Service through aggregated, anonymised usage analytics</li>
@@ -338,35 +337,30 @@
                     <p>We do not sell, rent or trade your personal information. We may share it with the following categories of service providers who are contractually required to handle it securely and only for the purpose we specify:</p>
 
                     <h3>Infrastructure &amp; Storage</h3>
-                    <ul>
-                        <li><strong>Amazon Web Services (AWS)</strong> — cloud hosting, database storage and object storage for receipt images. Servers are located in the <strong>ap-southeast-2 (Sydney)</strong> region by default.</li>
-                    </ul>
+                    <p><strong>Supabase Inc.</strong> — We use Supabase as our primary backend infrastructure, providing managed PostgreSQL database hosting, authentication services, and secure object storage for receipt images and vehicle photos. Supabase operates from secure, enterprise-grade cloud data centres. Our default region is configured for Australian customers to minimise data transfer outside Australia where possible.</p>
 
                     <h3>Payments</h3>
-                    <ul>
-                        <li><strong>Stripe, Inc.</strong> — subscription billing and payment processing. Stripe is certified PCI-DSS Level 1.</li>
-                    </ul>
+                    <p><strong>Google Play Billing</strong> — Subscription billing and payment processing for FleetTrack Pro at launch is handled exclusively by Google Play Billing through the Google Play Store. We do not receive or store credit card details. Google's privacy practices for Play Billing apply to all transactions and are available at policies.google.com.</p>
 
                     <h3>Communications</h3>
                     <ul>
-                        <li><strong>SendGrid (Twilio)</strong> — transactional and account emails</li>
-                        <li><strong>Apple APNs / Google FCM</strong> — push notification delivery</li>
+                        <li><strong>Resend</strong> — Transactional and account emails (invitations, password resets, service alerts) are delivered via Resend.</li>
+                        <li><strong>Google FCM</strong> — Push notification delivery for Android devices via Google Firebase Cloud Messaging.</li>
                     </ul>
 
-                    <h3>Analytics &amp; Error Tracking</h3>
-                    <ul>
-                        <li><strong>Sentry</strong> — anonymised crash and error reporting</li>
-                        <li>Usage analytics are aggregated and do not identify individual users</li>
-                    </ul>
+                    <h3>AI Services</h3>
+                    <p><strong>Anthropic, PBC</strong> — Receipt images uploaded to the Service are processed by Anthropic's Claude API to automatically extract structured data (vendor, amount, date, line items). Image data is transmitted securely to Anthropic for processing and is governed by Anthropic's commercial terms, which prohibit the use of customer data for training Anthropic's models. We do not send personally identifying information beyond the receipt image itself.</p>
+
+                    <p>Aggregated, anonymised product usage data may be collected to improve the Service. This data does not identify individual users and is not shared with third parties.</p>
 
                     <h3>Legal Disclosure</h3>
-                    <p>We may disclose personal information to law enforcement or government authorities where required by Australian law, a court order, or to protect the rights, property or safety of FleetTrack Pro, our users or the public.</p>
+                    <p>We may disclose personal information to law enforcement or government authorities where required by Australian law, a court order, or to protect the rights, property or safety of the Service, our users or the public.</p>
                     <p>In the event of a merger, acquisition or sale of all or part of our business, personal information may be transferred to the acquiring entity, subject to equivalent privacy protections.</p>
                 </section>
 
                 <section id="international">
                     <h2>6. Overseas Transfers</h2>
-                    <p>Some of our third-party service providers are based outside Australia (notably Stripe in the United States and Sentry in the United States). Before transferring personal information overseas, we take reasonable steps to ensure the recipient complies with the APPs or a substantially similar standard, in accordance with APP 8.</p>
+                    <p>Some of our third-party service providers operate infrastructure outside Australia (notably Anthropic in the United States for AI receipt processing, and Resend for email delivery). Before transferring personal information overseas, we take reasonable steps to ensure the recipient complies with the APPs or a substantially similar standard, in accordance with APP 8.</p>
                     <p>By using the Service, you acknowledge that your information may be transferred to and processed in countries outside Australia. Where we cannot guarantee an equivalent level of protection, we will seek your consent or rely on the relevant exception under APP 8.2.</p>
                 </section>
 
@@ -378,7 +372,6 @@
                         <li>TLS 1.2+ encryption of all data in transit</li>
                         <li>Bcrypt password hashing with a work factor of 12+</li>
                         <li>Role-based access controls limiting staff access to personal data</li>
-                        <li>Regular security assessments and penetration testing</li>
                         <li>Automatic session expiry and device management</li>
                     </ul>
                     <p>No method of transmission or storage is 100% secure. In the event of a data breach that is likely to result in serious harm, we will notify affected individuals and the Office of the Australian Information Commissioner (OAIC) in accordance with the <em>Notifiable Data Breaches</em> (NDB) scheme under Part IIIC of the Privacy Act, within 30 days of becoming aware of the breach.</p>
@@ -388,7 +381,7 @@
                     <h2>8. Data Retention</h2>
                     <p>We retain personal information for as long as your account is active or as needed to provide the Service. Upon account deletion we will:</p>
                     <ul>
-                        <li>Delete or anonymise personal account data within <strong>30 days</strong></li>
+                        <li>Delete or anonymise personal account data within <strong>30 days</strong>, with up to a further <strong>30 days</strong> for removal from encrypted backups</li>
                         <li>Retain transaction records (invoices, payment history) for <strong>7 years</strong> as required by Australian tax law</li>
                         <li>Retain anonymised, aggregated analytics data indefinitely</li>
                     </ul>
@@ -401,10 +394,9 @@
                     <ul>
                         <li><strong>Access</strong> the personal information we hold about you</li>
                         <li><strong>Correct</strong> information that is inaccurate, out-of-date or incomplete</li>
-                        <li><strong>Export</strong> your data in a portable format (CSV or JSON) via the app's Settings &gt; Export Data feature</li>
                         <li><strong>Delete</strong> your account and associated personal data via Settings &gt; Delete Account</li>
                     </ul>
-                    <p>To exercise these rights, contact us at <a href="mailto:hello@fleettrackpro.com.au">hello@fleettrackpro.com.au</a>. We will respond within <strong>30 days</strong>. We may need to verify your identity before processing your request. In limited circumstances, we may decline access as permitted by the Privacy Act (e.g., if providing access would pose a serious threat to another person's life, health or safety).</p>
+                    <p>To exercise these rights, contact us at <a href="mailto:support@fleettrackpro.com.au">support@fleettrackpro.com.au</a>. We will respond within <strong>30 days</strong>. We may need to verify your identity before processing your request. In limited circumstances, we may decline access as permitted by the Privacy Act (e.g., if providing access would pose a serious threat to another person's life, health or safety).</p>
                 </section>
 
                 <section id="cookies">
@@ -421,7 +413,7 @@
 
                 <section id="children">
                     <h2>11. Children's Privacy</h2>
-                    <p>The Service is intended for use by persons aged 18 years and over. We do not knowingly collect personal information from children under 18. If you believe a child has provided us with personal information, please contact us immediately at <a href="mailto:hello@fleettrackpro.com.au">hello@fleettrackpro.com.au</a> and we will promptly delete it.</p>
+                    <p>The Service is intended for use by persons aged 18 years and over. We do not knowingly collect personal information from children under 18. If you believe a child has provided us with personal information, please contact us immediately at <a href="mailto:support@fleettrackpro.com.au">support@fleettrackpro.com.au</a> and we will promptly delete it.</p>
                 </section>
 
                 <section id="complaints">
@@ -429,7 +421,7 @@
                     <p>If you believe we have mishandled your personal information or breached the APPs, we encourage you to contact us first so we can resolve the matter directly.</p>
 
                     <h3>Step 1 — Contact FleetTrack Pro</h3>
-                    <p>Email us at <a href="mailto:hello@fleettrackpro.com.au">hello@fleettrackpro.com.au</a> with the subject line "Privacy Complaint". We will acknowledge receipt within <strong>5 business days</strong> and aim to resolve all complaints within <strong>30 days</strong>.</p>
+                    <p>Email us at <a href="mailto:support@fleettrackpro.com.au">support@fleettrackpro.com.au</a> with the subject line "Privacy Complaint". We will acknowledge receipt within <strong>5 business days</strong> and aim to resolve all complaints within <strong>30 days</strong>.</p>
 
                     <h3>Step 2 — Office of the Australian Information Commissioner (OAIC)</h3>
                     <p>If you are not satisfied with our response, you may lodge a complaint with the OAIC:</p>
@@ -445,10 +437,10 @@
                     <p>For any privacy-related questions, requests or concerns:</p>
                     <div class="info-box">
                         <p>
-                            <strong>FleetTrack Pro Pty Ltd</strong><br>
+                            <strong>Cajon Outdoor Equipment Pty Ltd</strong> trading as Nightshift Systems<br>
                             Privacy Officer<br>
-                            Email: <a href="mailto:hello@fleettrackpro.com.au">hello@fleettrackpro.com.au</a><br>
-                            Australia
+                            Email: <a href="mailto:support@fleettrackpro.com.au">support@fleettrackpro.com.au</a><br>
+                            Perth, Western Australia, Australia
                         </p>
                     </div>
                 </section>
@@ -488,21 +480,21 @@
                     <ul>
                         <li><a href="/#features">Features</a></li>
                         <li><a href="/#pricing">Pricing</a></li>
-                        <li><a href="/#testimonials">Reviews</a></li>
+                        <li><a href="/#testimonials">Our story</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4 class="footer-col-title">Company</h4>
                     <ul>
                         <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="mailto:hello@fleettrackpro.com.au">Contact Us</a></li>
+                        <li><a href="mailto:support@fleettrackpro.com.au">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 FleetTrack Pro Pty Ltd. All rights reserved.</p>
-            <a href="mailto:hello@fleettrackpro.com.au" class="footer-email">hello@fleettrackpro.com.au</a>
+            <p>&copy; 2026 Cajon Outdoor Equipment Pty Ltd. All rights reserved.</p>
+            <a href="mailto:support@fleettrackpro.com.au" class="footer-email">support@fleettrackpro.com.au</a>
         </div>
     </div>
 </footer>
