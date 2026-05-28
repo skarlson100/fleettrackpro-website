@@ -110,18 +110,11 @@ h1, h2, h3, h4 {
 }
 
 .logo-mark {
-    width: 34px;
-    height: 34px;
-    background: var(--accent);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--font-heading);
-    font-size: 21px;
-    color: #fff;
+    height: 32px;
+    width: 32px;
+    object-fit: contain;
+    margin-right: 8px;
     flex-shrink: 0;
-    line-height: 1;
 }
 
 .logo-wordmark {
