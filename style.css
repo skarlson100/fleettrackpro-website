@@ -1542,3 +1542,235 @@ h1, h2, h3, h4 {
         height: 422px;
     }
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   25. HERO DEVICE — product-photo approach
+   ═══════════════════════════════════════════════════════════════ */
+
+.hero-scroll-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-device-wrap {
+    --tilt-x: 0deg;
+    --tilt-y: 0deg;
+    position: relative;
+    display: inline-block;
+    transform: perspective(1200px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
+    transition: transform 0.15s ease-out;
+    will-change: transform;
+}
+
+.hero-device-glow {
+    position: absolute;
+    inset: -80px -60px;
+    pointer-events: none;
+    z-index: 0;
+    background:
+        radial-gradient(ellipse 65% 55% at 50% 38%, rgba(241, 90, 36, 0.40) 0%, transparent 62%),
+        radial-gradient(ellipse 45% 28% at 50% 82%, rgba(241, 90, 36, 0.14) 0%, transparent 60%);
+}
+
+.hero-device-float {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-device-img {
+    display: block;
+    width: min(48vw, 460px);
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 32px 72px rgba(0, 0, 0, 0.60));
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   26. STICKY SCROLL SHOWCASE
+   ═══════════════════════════════════════════════════════════════ */
+
+.showcase {
+    background: var(--bg-deep);
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+.showcase-track {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 clamp(20px, 4vw, 48px);
+}
+
+/* ─── Sticky phone column ─────────────────────────────────────── */
+.showcase-phone-col {
+    position: sticky;
+    top: var(--nav-h);
+    align-self: start;
+    height: calc(100vh - var(--nav-h));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.showcase-phone-wrap {
+    position: relative;
+    width: clamp(320px, 35vw, 400px);
+    height: min(72vh, 660px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.showcase-phone-glow {
+    position: absolute;
+    inset: -70px -50px;
+    pointer-events: none;
+    z-index: 0;
+    background: radial-gradient(ellipse 65% 58% at 50% 44%, rgba(241, 90, 36, 0.28) 0%, transparent 66%);
+}
+
+.showcase-phone-img {
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    filter: drop-shadow(0 24px 56px rgba(0, 0, 0, 0.60));
+    transition: opacity 0.32s var(--ease);
+}
+
+.showcase-phone-img.is-fading { opacity: 0; }
+
+/* ─── Scrolling slides column ─────────────────────────────────── */
+.showcase-slides-col {
+    padding-bottom: 120px;
+}
+
+.showcase-slide {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 0 60px 48px;
+}
+
+.showcase-mobile-img {
+    display: none;
+}
+
+.showcase-copy {
+    opacity: 0;
+    transform: translateX(22px);
+    transition: opacity 0.5s var(--ease), transform 0.5s var(--ease);
+}
+
+.showcase-slide.is-active .showcase-copy {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.showcase-num {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--accent);
+    margin-bottom: 16px;
+}
+
+.showcase-heading {
+    font-family: var(--font-heading);
+    font-size: clamp(42px, 4.8vw, 68px);
+    letter-spacing: 0.02em;
+    color: var(--text-primary);
+    line-height: 0.95;
+    margin-bottom: 20px;
+}
+
+.showcase-body {
+    font-size: 17px;
+    color: var(--text-secondary);
+    line-height: 1.65;
+    max-width: 370px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   27. SHOWCASE — MOBILE DEGRADATION
+   ═══════════════════════════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+    .showcase-track {
+        grid-template-columns: 1fr;
+    }
+
+    .showcase-phone-col {
+        display: none;
+    }
+
+    .showcase-slide {
+        min-height: auto;
+        padding: 56px 0;
+        text-align: center;
+        align-items: center;
+        border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .showcase-slide:last-child {
+        border-bottom: none;
+    }
+
+    .showcase-mobile-img {
+        display: block;
+        width: 220px;
+        max-width: 72%;
+        height: auto;
+        margin: 0 auto 32px;
+        filter: drop-shadow(0 16px 36px rgba(0, 0, 0, 0.55));
+    }
+
+    .showcase-copy {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .showcase-body {
+        margin: 0 auto;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   28. HERO DEVICE FLOAT ANIMATION
+   ═══════════════════════════════════════════════════════════════ */
+
+@media (prefers-reduced-motion: no-preference) {
+    .hero-device-float {
+        animation: heroDeviceFloat 4.2s ease-in-out infinite;
+    }
+
+    @keyframes heroDeviceFloat {
+        0%, 100% { transform: rotate(-2deg) translateY(0); }
+        50%       { transform: rotate(-2deg) translateY(-16px); }
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   29. PREFERS-REDUCED-MOTION — disable all motion
+   ═══════════════════════════════════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-device-wrap  { transition: none; }
+    .showcase-phone-img { transition: none; }
+    .showcase-copy      { transition: none; }
+
+    [data-stagger],
+    [data-reveal] {
+        transition: none !important;
+    }
+}

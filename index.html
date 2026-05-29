@@ -9,6 +9,8 @@
     <meta property="og:description" content="Built by a Perth fleet operator. Launching soon on Google Play.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_AU">
+    <!-- TODO: regenerate og:image at 1200×630 for proper social previews (current asset is 800×400 — will letterbox) -->
+    <meta property="og:image" content="https://fleettrackpro.com.au/Assets/logo-full.png">
     <link rel="canonical" href="https://fleettrackpro.com.au">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23F15A24'/%3E%3Ctext x='50%25' y='73%25' text-anchor='middle' font-family='Arial Black,sans-serif' font-size='18' font-weight='900' fill='white'%3EF%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -82,17 +84,18 @@
                 </div>
             </div>
 
-            <!-- Hero Screenshot -->
+            <!-- Hero Device -->
             <div class="hero-visual">
-                <div class="phone-outer" id="phoneOuter">
-                    <div class="phone-glow"></div>
-                    <div class="phone-frame hero-phone-frame">
-                        <div class="phone-notch"></div>
-                        <img src="Assets/ss1.jpeg"
-                             alt="FleetTrack Pro Home screen showing fleet overview, monthly spend, and recent maintenance activity"
-                             class="phone-screenshot"
-                             loading="eager">
-                        <div class="phone-home-bar"></div>
+                <div class="hero-scroll-wrap" id="heroScroll">
+                    <div class="hero-device-wrap" id="heroDevice">
+                        <div class="hero-device-glow" aria-hidden="true"></div>
+                        <div class="hero-device-float">
+                            <img src="Assets/screen-home.png"
+                                 alt="FleetTrack Pro Home screen showing fleet overview, monthly spend, and recent activity"
+                                 class="hero-device-img"
+                                 width="931" height="1145"
+                                 loading="eager">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -186,6 +189,80 @@
                 </div>
                 <h3 class="feature-title">Service Interval Alerts</h3>
                 <p class="feature-desc">Distance and time-based alerts ensure scheduled maintenance never slips. Your vehicles stay in peak condition, your liability stays low.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================
+     STICKY SCROLL SHOWCASE
+     ========================================================= -->
+<section class="showcase" id="showcase">
+    <div class="container">
+        <div class="section-header" data-reveal>
+            <span class="section-label">See it in action</span>
+            <h2 class="section-title">Built for real fleets</h2>
+            <p class="section-subtitle">Every screen from the live app, running on real vehicles at Open Shell Adventures.</p>
+        </div>
+    </div>
+    <div class="showcase-track">
+
+        <!-- Sticky phone (desktop) -->
+        <div class="showcase-phone-col" aria-hidden="true">
+            <div class="showcase-phone-wrap">
+                <div class="showcase-phone-glow"></div>
+                <img class="showcase-phone-img" id="showcaseScreen"
+                     src="Assets/screen-home.png"
+                     alt="FleetTrack Pro app screen"
+                     width="931" height="1145"
+                     loading="lazy">
+            </div>
+        </div>
+
+        <!-- Scrolling copy slides -->
+        <div class="showcase-slides-col">
+
+            <div class="showcase-slide"
+                 data-screen="Assets/screen-home.png"
+                 data-alt="FleetTrack Pro home dashboard showing fleet overview and monthly spend">
+                <img class="showcase-mobile-img"
+                     src="Assets/screen-home.png"
+                     alt="FleetTrack Pro home dashboard"
+                     loading="lazy">
+                <div class="showcase-copy">
+                    <span class="showcase-num">01</span>
+                    <h3 class="showcase-heading">Your fleet<br>at a glance</h3>
+                    <p class="showcase-body">Monthly spend, active alerts, and recent jobs — everything the moment you open the app.</p>
+                </div>
+            </div>
+
+            <div class="showcase-slide"
+                 data-screen="Assets/screen-maintenance.png"
+                 data-alt="FleetTrack Pro maintenance log showing jobs across the fleet">
+                <img class="showcase-mobile-img"
+                     src="Assets/screen-maintenance.png"
+                     alt="FleetTrack Pro maintenance log"
+                     loading="lazy">
+                <div class="showcase-copy">
+                    <span class="showcase-num">02</span>
+                    <h3 class="showcase-heading">Maintenance,<br>logged</h3>
+                    <p class="showcase-body">Every job across the fleet with costs and status. Grouped by vehicle, filterable by date.</p>
+                </div>
+            </div>
+
+            <div class="showcase-slide"
+                 data-screen="Assets/screen-vehicle-detail.png"
+                 data-alt="FleetTrack Pro vehicle detail screen showing costs and service history">
+                <img class="showcase-mobile-img"
+                     src="Assets/screen-vehicle-detail.png"
+                     alt="FleetTrack Pro vehicle detail"
+                     loading="lazy">
+                <div class="showcase-copy">
+                    <span class="showcase-num">03</span>
+                    <h3 class="showcase-heading">Full vehicle<br>history</h3>
+                    <p class="showcase-body">Costs, odometer, compliance dates, and service history — all in one screen per vehicle.</p>
+                </div>
             </div>
 
         </div>
