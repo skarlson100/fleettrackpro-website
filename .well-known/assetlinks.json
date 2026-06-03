@@ -3,6 +3,6 @@
   "target": {
     "namespace": "android_app",
     "package_name": "com.fleettrackpro.app",
-    "sha256_cert_fingerprints": ["2C:9A:C8:8E:96:F0:85:57:48:FA:F2:81:1C:CE:F5:F3:5A:F5:26:EC:BC:4E:30:31:3D:61:81:81:DC:C0:9D:38:A"]
+    "sha256_cert_fingerprints": ["2C:9A:C8:8E:96:F0:85:57:48:FA:F2:81:1C:CE:F5:F3:5A:F5:26:EC:BC:4E:30:31:3D:61:81:8D:CC:09:D3:8A"]
   }
 }]
