@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use — FleetTrack Pro</title>
+    <meta name="description" content="FleetTrack Pro Terms of Use — the rules and conditions for using the FleetTrack Pro fleet management app.">
+    <link rel="canonical" href="https://fleettrackpro.com.au/terms">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23F15A24'/%3E%3Ctext x='50%25' y='73%25' text-anchor='middle' font-family='Arial Black,sans-serif' font-size='18' font-weight='900' fill='white'%3EF%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Terms-page-specific prose styles — identical pattern to privacy.html */
+        .privacy-page {
+            padding-top: calc(var(--nav-h) + 60px);
+            padding-bottom: 100px;
+            min-height: 100vh;
+            background: var(--bg-primary);
+        }
+
+        .privacy-hero {
+            padding-bottom: 48px;
+            border-bottom: 1px solid var(--border-subtle);
+            margin-bottom: 60px;
+        }
+
+        .privacy-hero .section-label { display: block; margin-bottom: 12px; }
+
+        .privacy-hero h1 {
+            font-size: clamp(48px, 6vw, 80px);
+            color: var(--text-primary);
+            margin-bottom: 16px;
+        }
+
+        .privacy-hero p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            max-width: 560px;
+        }
+
+        .privacy-meta {
+            display: flex;
+            gap: 32px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .privacy-meta span {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .privacy-meta strong { color: var(--text-secondary); }
+
+        /* Article layout */
+        .privacy-layout {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        /* TOC sidebar */
+        .privacy-toc {
+            position: sticky;
+            top: calc(var(--nav-h) + 24px);
+        }
+
+        .toc-title {
+            font-family: var(--font-body);
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 14px;
+        }
+
+        .toc-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .toc-list a {
+            display: block;
+            font-size: 13px;
+            color: var(--text-muted);
+            padding: 6px 10px;
+            border-radius: 6px;
+            transition: background var(--t) var(--ease), color var(--t) var(--ease);
+            line-height: 1.35;
+        }
+
+        .toc-list a:hover {
+            background: var(--bg-card);
+            color: var(--text-primary);
+        }
+
+        /* Article prose */
+        .privacy-article section {
+            margin-bottom: 52px;
+        }
+
+        .privacy-article h2 {
+            font-size: clamp(28px, 3vw, 38px);
+            color: var(--text-primary);
+            margin-bottom: 18px;
+            padding-top: 8px;
+        }
+
+        .privacy-article h3 {
+            font-family: var(--font-body);
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 24px 0 10px;
+            letter-spacing: 0;
+        }
+
+        .privacy-article p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.75;
+            margin-bottom: 14px;
+        }
+
+        .privacy-article ul {
+            list-style: none;
+            padding: 0;
+            margin: 14px 0 14px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .privacy-article li {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.65;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .privacy-article li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        .privacy-article a {
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .privacy-article a:hover { color: var(--accent-hover); }
+
+        .info-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            padding: 18px 20px;
+            margin: 20px 0;
+        }
+
+        .info-box p {
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+
+        @media (max-width: 860px) {
+            .privacy-layout { grid-template-columns: 1fr; }
+            .privacy-toc { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar scrolled" id="navbar">
+    <div class="nav-inner">
+        <a href="/" class="nav-logo">
+            <div class="logo-mark">F</div>
+            <span class="logo-wordmark">FleetTrack <em>Pro</em></span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#pricing">Pricing</a></li>
+            <li><a href="/#testimonials">Our story</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="/#pricing" class="btn btn-primary nav-cta">Get Started</a>
+            <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<div class="privacy-page">
+    <div class="container">
+
+        <!-- Page Header -->
+        <div class="privacy-hero">
+            <span class="section-label">Legal</span>
+            <h1>Terms of Use</h1>
+            <p>The rules and conditions that apply when you use FleetTrack Pro. Please read these carefully before creating an account.</p>
+            <div class="privacy-meta">
+                <span><strong>Effective date:</strong> June 2026</span>
+                <span><strong>Last updated:</strong> June 2026</span>
+                <span><strong>Version:</strong> 1.0</span>
+            </div>
+        </div>
+
+        <div class="privacy-layout">
+
+            <!-- Table of Contents -->
+            <nav class="privacy-toc" aria-label="Table of contents">
+                <div class="toc-title">Contents</div>
+                <ul class="toc-list">
+                    <li><a href="#introduction">1. Introduction &amp; Acceptance</a></li>
+                    <li><a href="#accounts">2. Account Registration</a></li>
+                    <li><a href="#billing">3. Subscription Plans &amp; Billing</a></li>
+                    <li><a href="#trial">4. Free Trial</a></li>
+                    <li><a href="#acceptable-use">5. Acceptable Use</a></li>
+                    <li><a href="#ip">6. Intellectual Property</a></li>
+                    <li><a href="#data">7. User Data &amp; Privacy</a></li>
+                    <li><a href="#availability">8. Service Availability</a></li>
+                    <li><a href="#liability">9. Limitation of Liability</a></li>
+                    <li><a href="#termination">10. Termination</a></li>
+                    <li><a href="#disputes">11. Disputes</a></li>
+                    <li><a href="#changes">12. Changes to Terms</a></li>
+                    <li><a href="#contact">13. Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Article Content -->
+            <article class="privacy-article">
+
+                <section id="introduction">
+                    <h2>1. Introduction &amp; Acceptance</h2>
+                    <p>These Terms of Use ("<strong>Terms</strong>") govern your access to and use of FleetTrack Pro, the mobile fleet management application and related services (collectively, the "<strong>Service</strong>"), operated by Nightshift Systems (ABN 23 942 251 561), a sole trader based in Perth, Western Australia ("<strong>we</strong>", "<strong>us</strong>", "<strong>our</strong>").</p>
+                    <p>By creating an account, downloading the app, or otherwise using the Service, you agree to be bound by these Terms. If you do not agree, do not use the Service.</p>
+                    <p>You must be at least 18 years of age to use the Service. If you are under 18, you may only use the Service with the involvement and consent of a parent or legal guardian who agrees to these Terms on your behalf.</p>
+                    <div class="info-box">
+                        <p>These Terms form a legally binding agreement between you and Nightshift Systems. We recommend you save or print a copy for your records.</p>
+                    </div>
+                </section>
+
+                <section id="accounts">
+                    <h2>2. Account Registration</h2>
+                    <p>To access most features of the Service, you must create an account. When you register, you agree to:</p>
+                    <ul>
+                        <li>Provide accurate, current and complete information about yourself and your business</li>
+                        <li>Keep your account information up to date</li>
+                        <li>Maintain only one account per person — creating multiple accounts is not permitted</li>
+                        <li>Keep your password confidential and not share it with anyone else</li>
+                        <li>Take responsibility for all activity that occurs under your account</li>
+                        <li>Notify us immediately at <a href="mailto:support@fleettrackpro.com.au">support@fleettrackpro.com.au</a> if you suspect any unauthorised access to your account</li>
+                    </ul>
+                    <p>We reserve the right to refuse registration or cancel accounts at our discretion, including where we believe information provided is false, misleading or in breach of these Terms.</p>
+                </section>
+
+                <section id="billing">
+                    <h2>3. Subscription Plans &amp; Billing</h2>
+                    <p>FleetTrack Pro is offered on four subscription tiers:</p>
+                    <ul>
+                        <li><strong>Free</strong> — no charge, limited to 2 vehicles and 1 team member</li>
+                        <li><strong>Starter</strong> — AUD $19.00/month or $190.00/year (5 vehicles, 2 team members)</li>
+                        <li><strong>Professional</strong> — AUD $49.00/month or $490.00/year (15 vehicles, 5 team members)</li>
+                        <li><strong>Enterprise</strong> — AUD $99.00/month or $990.00/year (30 vehicles, 10 team members)</li>
+                    </ul>
+                    <p>Annual plans are billed as a single upfront payment and represent approximately 2 months free compared to monthly billing. Full feature details for each plan are available on our <a href="/#pricing">pricing page</a>.</p>
+
+                    <h3>Billing via Google Play</h3>
+                    <p>All paid subscriptions are processed through Google Play Billing. By subscribing, you also agree to Google's terms and conditions for in-app purchases. Payment details (credit card, Google Pay, etc.) are handled entirely by Google — we do not receive or store your payment information.</p>
+
+                    <h3>Auto-Renewal</h3>
+                    <p>Subscriptions renew automatically at the end of each billing period unless you cancel before the renewal date. You can manage or cancel your subscription at any time through the Google Play Store under your account subscriptions.</p>
+
+                    <h3>Price Changes</h3>
+                    <p>We may change subscription prices from time to time. We will give you at least 30 days' notice of any price increase via email or in-app notification before it takes effect. If you do not wish to continue at the new price, you may cancel before the next renewal date.</p>
+
+                    <h3>Refunds</h3>
+                    <p>We do not offer refunds for partially used billing periods, except where required by the <em>Australian Consumer Law</em> or other applicable legislation. If you believe you are entitled to a refund under Australian Consumer Law, please contact us at <a href="mailto:support@fleettrackpro.com.au">support@fleettrackpro.com.au</a>.</p>
+                </section>
+
+                <section id="trial">
+                    <h2>4. Free Trial</h2>
+                    <p>New accounts receive a 14-day Pro trial automatically on sign-up. No credit card is required to start the trial.</p>
+                    <ul>
+                        <li>During the trial, you have access to all features of the Professional plan</li>
+                        <li>At the end of the trial period, your account automatically moves to the Free plan unless you subscribe to a paid plan</li>
+                        <li>Your data is preserved when the trial ends — you will not lose vehicles, maintenance records or trip history</li>
+                        <li>Some features that require a paid plan will become inaccessible on the Free plan, but your data remains intact if you later subscribe</li>
+                    </ul>
+                    <p>We reserve the right to modify or discontinue the free trial offer at any time for new sign-ups, without affecting trials that have already started.</p>
+                </section>
+
+                <section id="acceptable-use">
+                    <h2>5. Acceptable Use</h2>
+                    <p>You agree to use the Service only for its intended purpose — managing and maintaining fleet vehicles. You must not:</p>
+                    <ul>
+                        <li>Reverse engineer, decompile, disassemble or attempt to extract the source code of the app</li>
+                        <li>Scrape, crawl or systematically extract data from the Service using automated tools</li>
+                        <li>Share your login credentials with others or allow multiple people to use a single account</li>
+                        <li>Use the Service to store, transmit or process data in violation of any law or regulation</li>
+                        <li>Attempt to gain unauthorised access to other users' accounts or any part of our infrastructure</li>
+                        <li>Upload or transmit viruses, malware or any other harmful code</li>
+                        <li>Use the Service in a way that could damage, disable, overburden or impair our servers or networks</li>
+                        <li>Resell, sublicense or otherwise commercialise access to the Service without our written permission</li>
+                    </ul>
+                    <p>We may suspend or terminate your account immediately if we reasonably believe you have breached any of these obligations.</p>
+                </section>
+
+                <section id="ip">
+                    <h2>6. Intellectual Property</h2>
+
+                    <h3>Our Property</h3>
+                    <p>FleetTrack Pro, including its name, logo, design, software code, features and all content we create, is owned by Nightshift Systems and protected by Australian and international intellectual property laws. Nothing in these Terms grants you any right to use our intellectual property other than to use the Service as intended.</p>
+
+                    <h3>Your Data</h3>
+                    <p>You retain full ownership of all data you input into the Service — including vehicle records, maintenance logs, trip history, receipt images and any other content you create ("<strong>User Data</strong>"). We do not claim any ownership over your User Data.</p>
+
+                    <h3>Licence to Use</h3>
+                    <p>By using the Service, you grant us a limited, non-exclusive, royalty-free licence to store, process and display your User Data solely as needed to provide the Service to you. We will not use your data for any other purpose without your consent.</p>
+                </section>
+
+                <section id="data">
+                    <h2>7. User Data &amp; Privacy</h2>
+                    <p>Your privacy matters to us. How we collect, use and protect your personal information is explained in our <a href="privacy.html">Privacy Policy</a>, which forms part of these Terms.</p>
+                    <p>Key points:</p>
+                    <ul>
+                        <li>You own your data — we do not sell it to third parties</li>
+                        <li>We use your data only to provide and improve the Service</li>
+                        <li>Receipt images you upload for AI scanning are sent to Anthropic's Claude API for processing. Anthropic's commercial terms prohibit using customer data to train their models. See our <a href="privacy.html">Privacy Policy</a> for full details</li>
+                        <li>You can delete your account and all associated data at any time through the app</li>
+                    </ul>
+                    <p>By using the Service, you consent to the handling of your personal information as described in our Privacy Policy.</p>
+                </section>
+
+                <section id="availability">
+                    <h2>8. Service Availability</h2>
+                    <p>The Service is provided on an "<strong>as is</strong>" and "<strong>as available</strong>" basis. We aim to keep FleetTrack Pro reliable and available, but we do not guarantee:</p>
+                    <ul>
+                        <li>That the Service will be uninterrupted, error-free or free from bugs</li>
+                        <li>Any specific level of uptime or availability</li>
+                        <li>That the Service will meet your specific requirements</li>
+                    </ul>
+                    <p>We may occasionally take the Service offline for maintenance, updates or other operational reasons. Where possible, we will give advance notice of planned downtime via in-app notification or email.</p>
+                    <p>We may add, modify or remove features at any time. For material changes that significantly reduce functionality you are currently using, we will provide reasonable notice and, where appropriate, a pro-rata adjustment to your subscription.</p>
+                </section>
+
+                <section id="liability">
+                    <h2>9. Limitation of Liability</h2>
+                    <p>To the maximum extent permitted by Australian law, Nightshift Systems is not liable for any indirect, incidental, consequential, special or punitive damages arising from your use of or inability to use the Service, including but not limited to loss of data, lost profits, or business interruption, even if we have been advised of the possibility of such damages.</p>
+                    <p>Our total liability to you for any claim arising in connection with the Service — whether in contract, tort or otherwise — is limited to the total fees you have paid us in the 12 months immediately preceding the event giving rise to the claim. If you are on the Free plan, our liability is limited to AUD $100.</p>
+                    <div class="info-box">
+                        <p><strong>Australian Consumer Law:</strong> Nothing in these Terms excludes, restricts or modifies any guarantee, warranty, right or remedy that you have under the <em>Australian Consumer Law</em> (Schedule 2 of the <em>Competition and Consumer Act 2010</em> (Cth)) or any other applicable legislation that cannot lawfully be excluded or limited. If the Australian Consumer Law applies, our liability for a failure to comply with a guarantee is limited to, at our election, re-supplying the services or paying the cost of having the services re-supplied.</p>
+                    </div>
+                </section>
+
+                <section id="termination">
+                    <h2>10. Termination</h2>
+
+                    <h3>Termination by You</h3>
+                    <p>You may close your account at any time. To delete your account, open the FleetTrack Pro app, go to <strong>Profile</strong> and tap <strong>Delete Account</strong>. Account deletion is immediate and permanent. If you are on a paid plan, your subscription will not be automatically cancelled — you should cancel via the Google Play Store before deleting your account to avoid further charges.</p>
+
+                    <h3>Termination by Us</h3>
+                    <p>We may suspend or terminate your access to the Service immediately and without prior notice if:</p>
+                    <ul>
+                        <li>You breach these Terms</li>
+                        <li>You engage in fraudulent, abusive or illegal activity</li>
+                        <li>We are required to do so by law</li>
+                        <li>We decide to discontinue the Service (in which case we will give reasonable notice)</li>
+                    </ul>
+                    <p>We may suspend access (rather than terminate) where we believe a breach is remediable, giving you the opportunity to correct it.</p>
+
+                    <h3>Effect of Termination</h3>
+                    <p>On termination, your right to access the Service ceases immediately. We will handle your data in accordance with our <a href="privacy.html">Privacy Policy</a> — personal account data is deleted within 30 days, with up to a further 30 days for removal from encrypted backups.</p>
+                </section>
+
+                <section id="disputes">
+                    <h2>11. Disputes</h2>
+                    <p>These Terms are governed by the laws of Western Australia, Australia. You and we each submit to the non-exclusive jurisdiction of the courts of Western Australia and any courts competent to hear appeals from those courts.</p>
+                    <p>Before commencing any legal proceedings, we ask that you contact us at <a href="mailto:support@fleettrackpro.com.au">support@fleettrackpro.com.au</a> to attempt to resolve the dispute in good faith. We will respond within 10 business days and will make a genuine effort to find a reasonable resolution.</p>
+                    <p>Nothing in this clause prevents either party from seeking urgent injunctive or other interlocutory relief from a court where necessary to protect their rights.</p>
+                </section>
+
+                <section id="changes">
+                    <h2>12. Changes to Terms</h2>
+                    <p>We may update these Terms from time to time to reflect changes to the Service, our business or the law. When we make material changes, we will:</p>
+                    <ul>
+                        <li>Update the "Last updated" date at the top of this page</li>
+                        <li>Send a notification to your registered email address</li>
+                        <li>Display a notice in the app for at least 30 days before the changes take effect</li>
+                    </ul>
+                    <p>Your continued use of the Service after the effective date of any updated Terms constitutes your acceptance of the changes. If you do not agree to the updated Terms, you should stop using the Service and may close your account.</p>
+                    <p>For minor changes (such as clarifications, corrections or updates that do not materially affect your rights), we may update these Terms without separate notification, relying on the "Last updated" date as notice.</p>
+                </section>
+
+                <section id="contact">
+                    <h2>13. Contact</h2>
+                    <p>If you have any questions, concerns or feedback about these Terms or the Service, please get in touch:</p>
+                    <div class="info-box">
+                        <p>
+                            <strong>Nightshift Systems</strong><br>
+                            ABN 23 942 251 561<br>
+                            Perth, Western Australia, Australia<br>
+                            Email: <a href="mailto:support@fleettrackpro.com.au">support@fleettrackpro.com.au</a>
+                        </p>
+                    </div>
+                    <p>We aim to respond to all enquiries within 2 business days.</p>
+                </section>
+
+            </article>
+        </div>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="/" class="nav-logo footer-logo">
+                    <div class="logo-mark">F</div>
+                    <span class="logo-wordmark">FleetTrack <em>Pro</em></span>
+                </a>
+                <p class="footer-tagline">Fleet management built for the real world.</p>
+                <p class="footer-sub">Proudly Australian. Built for Australian fleet operators.</p>
+            </div>
+            <div class="footer-nav-group">
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Product</h4>
+                    <ul>
+                        <li><a href="/#features">Features</a></li>
+                        <li><a href="/#pricing">Pricing</a></li>
+                        <li><a href="/#testimonials">Our story</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="mailto:support@fleettrackpro.com.au">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Nightshift Systems. ABN 23 942 251 561. All rights reserved.</p>
+            <a href="mailto:support@fleettrackpro.com.au" class="footer-email">support@fleettrackpro.com.au</a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
