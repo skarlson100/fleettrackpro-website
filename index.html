@@ -1,19 +1,20 @@
 <!DOCTYPE html>
+
 <html lang="en-AU">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FleetTrack Pro — Fleet Maintenance App for Small Fleets</title>
-    <meta name="description" content="FleetTrack Pro — fleet maintenance for Australian small fleets. AI receipt scanning, GPS trips, service reminders, inspection checklists. Android.">
-    <meta property="og:title" content="FleetTrack Pro — Fleet Management Built for the Real World">
-    <meta property="og:description" content="Mobile-first fleet maintenance app for Australian small fleet operators. AI receipt scanning, GPS trips, service reminders, inspection checklists, and compliance tracking. Android.">
-    <meta property="og:type" content="website">
-    <meta property="og:url"  content="https://fleettrackpro.com.au/">
-    <meta property="og:locale" content="en_AU">
-    <!-- TODO: regenerate og:image at 1200×630 for proper social previews (current asset is 800×400 — will letterbox) -->
-    <meta property="og:image" content="https://fleettrackpro.com.au/Assets/logo-full.png">
-    <link rel="canonical" href="https://fleettrackpro.com.au">
-    <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FleetTrack Pro — Fleet Maintenance App for Small Fleets</title>
+<meta content="FleetTrack Pro — fleet maintenance for Australian small fleets. AI receipt scanning, GPS trips, service reminders, inspection checklists. Android." name="description"/>
+<meta content="FleetTrack Pro — Fleet Management Built for the Real World" property="og:title"/>
+<meta content="Mobile-first fleet maintenance app for Australian small fleet operators. AI receipt scanning, GPS trips, service reminders, inspection checklists, and compliance tracking. Android." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://fleettrackpro.com.au/" property="og:url"/>
+<meta content="en_AU" property="og:locale"/>
+<!-- TODO: regenerate og:image at 1200×630 for proper social previews (current asset is 800×400 — will letterbox) -->
+<meta content="https://fleettrackpro.com.au/Assets/logo-full.png" property="og:image"/>
+<link href="https://fleettrackpro.com.au" rel="canonical"/>
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
@@ -37,7 +38,7 @@
       "featureList": "AI receipt scanning, GPS trip logging, service interval reminders, inspection checklists, compliance tracking, cost reporting, PDF reports, multi-user team management"
     }
     </script>
-    <script type="application/ld+json">
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -59,571 +60,484 @@
       }
     }
     </script>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23F15A24'/%3E%3Ctext x='50%25' y='73%25' text-anchor='middle' font-family='Arial Black,sans-serif' font-size='18' font-weight='900' fill='white'%3EF%3C/text%3E%3C/svg%3E">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23F15A24'/%3E%3Ctext x='50%25' y='73%25' text-anchor='middle' font-family='Arial Black,sans-serif' font-size='18' font-weight='900' fill='white'%3EF%3C/text%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-
 <!-- =========================================================
      NAVIGATION
      ========================================================= -->
 <nav class="navbar" id="navbar">
-    <div class="nav-inner">
-        <a href="/" class="nav-logo">
-            <img src="Assets/logo-mark.png" alt="FleetTrack Pro" class="logo-mark">
-            <span class="logo-wordmark">FleetTrack <em>Pro</em></span>
-        </a>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#features">Features</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#testimonials">Our story</a></li>
-            <li><a href="privacy.html">Privacy</a></li>
-        </ul>
-        <div class="nav-actions">
-            <a href="#pricing" class="btn btn-primary nav-cta">Get Started</a>
-            <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </div>
+<div class="nav-inner">
+<a class="nav-logo" href="/">
+<img alt="FleetTrack Pro" class="logo-mark" src="Assets/logo-mark.png"/>
+<span class="logo-wordmark">FleetTrack <em>Pro</em></span>
+</a>
+<ul class="nav-links" id="navLinks">
+<li><a href="#features">Features</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#testimonials">Our story</a></li>
+<li><a href="privacy.html">Privacy</a></li>
+</ul>
+<div class="nav-actions">
+<a class="btn btn-primary nav-cta" href="#pricing">Get Started</a>
+<button aria-label="Open menu" class="nav-hamburger" id="navHamburger">
+<span></span><span></span><span></span>
+</button>
+</div>
+</div>
 </nav>
-
 <!-- =========================================================
      HERO
      ========================================================= -->
 <section class="hero" id="hero">
-    <div class="hero-grain" aria-hidden="true"></div>
-    <div class="hero-grid-bg" aria-hidden="true"></div>
-
-    <div class="container">
-        <div class="hero-layout">
-
-            <div class="hero-text">
-                <div class="hero-eyebrow" data-stagger="0">
-                    <span class="eyebrow-pip"></span>
+<div aria-hidden="true" class="hero-grain"></div>
+<div aria-hidden="true" class="hero-grid-bg"></div>
+<div class="container">
+<div class="hero-layout">
+<div class="hero-text">
+<div class="hero-eyebrow" data-stagger="0">
+<span class="eyebrow-pip"></span>
                     Purpose-built for Australian fleet operators
                 </div>
-
-                <h1 class="hero-heading" data-stagger="160">
-                    Fleet Management<br>
-                    Built for<br>
-                    <span class="text-accent">The Real World</span>
-                </h1>
-
-                <p class="hero-subtext" data-stagger="320">
+<h1 class="hero-heading" data-stagger="160">
+                    Fleet Management<br/>
+                    Built for<br/>
+<span class="text-accent">The Real World</span>
+</h1>
+<p class="hero-subtext" data-stagger="320">
                     Stop juggling spreadsheets, sticky notes and paper dockets.
                     FleetTrack Pro puts every vehicle, expense and compliance
                     deadline in one powerful mobile app.
                 </p>
-
-                <div class="hero-ctas" data-stagger="480">
-                    <a href="#waitlist" class="btn btn-primary hero-cta-btn">Join the waitlist</a>
-                </div>
-
-                <div class="hero-proof" data-stagger="640">
-                    <div class="hero-prelaunch">
-                        <span class="prelaunch-label">Launching soon on Google Play</span>
-                        <span class="prelaunch-body">Built by a Perth fleet operator. Running live at Open Shell Adventures.</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Hero Device -->
-            <div class="hero-visual">
-                <div class="hero-scroll-wrap" id="heroScroll">
-                    <div class="hero-device-wrap" id="heroDevice">
-                        <div class="hero-device-glow" aria-hidden="true"></div>
-                        <div class="hero-device-float">
-                            <img src="Assets/screen-home.png"
-                                 alt="FleetTrack Pro Home screen showing fleet overview, monthly spend, and recent activity"
-                                 class="hero-device-img"
-                                 width="931" height="1145"
-                                 loading="eager">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
+<div class="hero-ctas" data-stagger="480">
+<a class="btn btn-primary hero-cta-btn" href="#waitlist">Join the waitlist</a>
+</div>
+<div class="hero-proof" data-stagger="640">
+<div class="hero-prelaunch">
+<span class="prelaunch-label">Launching soon on Google Play</span>
+<span class="prelaunch-body">Built by a Perth fleet operator. Running live at <a href="https://openshell.com.au/" rel="noopener noreferrer" target="_blank">Open Shell Adventures</a>.</span>
+</div>
+</div>
+</div>
+<!-- Hero Device -->
+<div class="hero-visual">
+<div class="hero-scroll-wrap" id="heroScroll">
+<div class="hero-device-wrap" id="heroDevice">
+<div aria-hidden="true" class="hero-device-glow"></div>
+<div class="hero-device-float">
+<img alt="FleetTrack Pro Home screen showing fleet overview, monthly spend, and recent activity" class="hero-device-img" height="1145" loading="eager" src="Assets/screen-home.png" width="931"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- =========================================================
      FEATURES
      ========================================================= -->
 <section class="features" id="features">
-    <div class="container">
-        <div class="section-header" data-reveal>
-            <span class="section-label">Features</span>
-            <h2 class="section-title">Everything your fleet needs</h2>
-            <p class="section-subtitle">Purpose-built tools for Australian fleet operators. No fluff — just what matters on the job.</p>
-        </div>
-
-        <div class="features-grid">
-
-            <div class="feature-card" data-reveal data-reveal-delay="0">
-                <div class="feature-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="5" y="2" width="14" height="20" rx="2"/>
-                        <line x1="9" y1="7" x2="15" y2="7"/>
-                        <line x1="9" y1="11" x2="13" y2="11"/>
-                        <circle cx="17" cy="16" r="3"/>
-                        <line x1="19.4" y1="18.4" x2="22" y2="21"/>
-                    </svg>
-                </div>
-                <h3 class="feature-title">AI Receipt Scanning</h3>
-                <p class="feature-desc">Snap a photo or upload a PDF receipt. AI extracts the vendor, date, amount, and line items. If it reads a plate number, it auto-matches the vehicle in your fleet.</p>
-            </div>
-
-            <div class="feature-card" data-reveal data-reveal-delay="80">
-                <div class="feature-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
-                        <circle cx="12" cy="9" r="2.5"/>
-                    </svg>
-                </div>
-                <h3 class="feature-title">GPS Trip Logging</h3>
-                <p class="feature-desc">Log GPS trips with business or personal classification for ATO logbook compliance. Start and end odometer readings, reverse-geocoded addresses, and downloadable trip reports.</p>
-            </div>
-
-            <div class="feature-card" data-reveal data-reveal-delay="160">
-                <div class="feature-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="3" y="5" width="18" height="14" rx="2"/>
-                        <polyline points="9,9 12,12 15,9"/>
-                        <line x1="12" y1="12" x2="12" y2="16"/>
-                        <line x1="7" y1="8" x2="7" y2="8"/>
-                    </svg>
-                </div>
-                <h3 class="feature-title">Inspection Checklists</h3>
-                <p class="feature-desc">Pre-trip checks, post-trip inspections, daily walkarounds — build custom checklists for your fleet and track who completed what, when, with photos.</p>
-            </div>
-
-            <div class="feature-card" data-reveal data-reveal-delay="0">
-                <div class="feature-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7L12 2z"/>
-                        <polyline points="9,12 11,14 15,10"/>
-                    </svg>
-                </div>
-                <h3 class="feature-title">Compliance Management</h3>
-                <p class="feature-desc">Track more than rego and insurance. Add custom compliance fields — fire extinguisher expiry, roadworthy certificates, any date-based requirement — with automatic reminders when they're due.</p>
-            </div>
-
-            <div class="feature-card" data-reveal data-reveal-delay="80">
-                <div class="feature-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                        <polyline points="14,2 14,8 20,8"/>
-                        <line x1="16" y1="13" x2="8" y2="13"/>
-                        <line x1="16" y1="17" x2="8" y2="17"/>
-                        <line x1="10" y1="9" x2="8" y2="9"/>
-                    </svg>
-                </div>
-                <h3 class="feature-title">PDF Reports</h3>
-                <p class="feature-desc">Generate professional maintenance and expense reports in seconds. Ready for your accountant, fleet manager or insurance claim.</p>
-            </div>
-
-            <div class="feature-card" data-reveal data-reveal-delay="160">
-                <div class="feature-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                        <circle cx="9" cy="7" r="4"/>
-                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                    </svg>
-                </div>
-                <h3 class="feature-title">Team Management</h3>
-                <p class="feature-desc">Invite your team with a join code or email link. Four roles — Owner, Manager, Technician, Driver — control who can log maintenance, track trips, and manage vehicles.</p>
-            </div>
-
-            <div class="feature-card" data-reveal data-reveal-delay="0">
-                <div class="feature-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
-                        <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
-                    </svg>
-                </div>
-                <h3 class="feature-title">Service Interval Alerts</h3>
-                <p class="feature-desc">Distance and time-based alerts ensure scheduled maintenance never slips. Your vehicles stay in peak condition, your liability stays low.</p>
-            </div>
-
-        </div>
-    </div>
+<div class="container">
+<div class="section-header" data-reveal="">
+<span class="section-label">Features</span>
+<h2 class="section-title">Everything your fleet needs</h2>
+<p class="section-subtitle">Purpose-built tools for Australian fleet operators. No fluff — just what matters on the job.</p>
+</div>
+<div class="features-grid">
+<div class="feature-card" data-reveal="" data-reveal-delay="0">
+<div class="feature-icon">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<rect height="20" rx="2" width="14" x="5" y="2"></rect>
+<line x1="9" x2="15" y1="7" y2="7"></line>
+<line x1="9" x2="13" y1="11" y2="11"></line>
+<circle cx="17" cy="16" r="3"></circle>
+<line x1="19.4" x2="22" y1="18.4" y2="21"></line>
+</svg>
+</div>
+<h3 class="feature-title">AI Receipt Scanning</h3>
+<p class="feature-desc">Snap a photo or upload a PDF receipt. AI extracts the vendor, date, amount, and line items. If it reads a plate number, it auto-matches the vehicle in your fleet.</p>
+</div>
+<div class="feature-card" data-reveal="" data-reveal-delay="80">
+<div class="feature-icon">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"></path>
+<circle cx="12" cy="9" r="2.5"></circle>
+</svg>
+</div>
+<h3 class="feature-title">GPS Trip Logging</h3>
+<p class="feature-desc">Log GPS trips with business or personal classification for ATO logbook compliance. Start and end odometer readings, reverse-geocoded addresses, and downloadable trip reports.</p>
+</div>
+<div class="feature-card" data-reveal="" data-reveal-delay="160">
+<div class="feature-icon">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<rect height="14" rx="2" width="18" x="3" y="5"></rect>
+<polyline points="9,9 12,12 15,9"></polyline>
+<line x1="12" x2="12" y1="12" y2="16"></line>
+<line x1="7" x2="7" y1="8" y2="8"></line>
+</svg>
+</div>
+<h3 class="feature-title">Inspection Checklists</h3>
+<p class="feature-desc">Pre-trip checks, post-trip inspections, daily walkarounds — build custom checklists for your fleet and track who completed what, when, with photos.</p>
+</div>
+<div class="feature-card" data-reveal="" data-reveal-delay="0">
+<div class="feature-icon">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7L12 2z"></path>
+<polyline points="9,12 11,14 15,10"></polyline>
+</svg>
+</div>
+<h3 class="feature-title">Compliance Management</h3>
+<p class="feature-desc">Track more than rego and insurance. Add custom compliance fields — fire extinguisher expiry, roadworthy certificates, any date-based requirement — with automatic reminders when they're due.</p>
+</div>
+<div class="feature-card" data-reveal="" data-reveal-delay="80">
+<div class="feature-icon">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+<polyline points="14,2 14,8 20,8"></polyline>
+<line x1="16" x2="8" y1="13" y2="13"></line>
+<line x1="16" x2="8" y1="17" y2="17"></line>
+<line x1="10" x2="8" y1="9" y2="9"></line>
+</svg>
+</div>
+<h3 class="feature-title">PDF Reports</h3>
+<p class="feature-desc">Generate professional maintenance and expense reports in seconds. Ready for your accountant, fleet manager or insurance claim.</p>
+</div>
+<div class="feature-card" data-reveal="" data-reveal-delay="160">
+<div class="feature-icon">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+<circle cx="9" cy="7" r="4"></circle>
+<path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+</svg>
+</div>
+<h3 class="feature-title">Team Management</h3>
+<p class="feature-desc">Invite your team with a join code or email link. Four roles — Owner, Manager, Technician, Driver — control who can log maintenance, track trips, and manage vehicles.</p>
+</div>
+<div class="feature-card" data-reveal="" data-reveal-delay="0">
+<div class="feature-icon">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+<path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+</svg>
+</div>
+<h3 class="feature-title">Service Interval Alerts</h3>
+<p class="feature-desc">Distance and time-based alerts ensure scheduled maintenance never slips. Your vehicles stay in peak condition, your liability stays low.</p>
+</div>
+</div>
+</div>
 </section>
-
 <!-- =========================================================
      STICKY SCROLL SHOWCASE
      ========================================================= -->
 <section class="showcase" id="showcase">
-    <div class="container">
-        <div class="section-header" data-reveal>
-            <span class="section-label">See it in action</span>
-            <h2 class="section-title">Built for real fleets</h2>
-            <p class="section-subtitle">Every screen from the live app, running on real vehicles at Open Shell Adventures.</p>
-        </div>
-    </div>
-    <div class="showcase-track">
-
-        <!-- Sticky phone (desktop) -->
-        <div class="showcase-phone-col" aria-hidden="true">
-            <div class="showcase-phone-wrap">
-                <div class="showcase-phone-glow"></div>
-                <img class="showcase-phone-img" id="showcaseScreen"
-                     src="Assets/screen-home.png"
-                     alt="FleetTrack Pro app screen"
-                     width="931" height="1145"
-                     loading="lazy">
-            </div>
-        </div>
-
-        <!-- Scrolling copy slides -->
-        <div class="showcase-slides-col">
-
-            <div class="showcase-slide"
-                 data-screen="Assets/screen-home.png"
-                 data-alt="FleetTrack Pro home dashboard showing fleet overview and monthly spend">
-                <img class="showcase-mobile-img"
-                     src="Assets/screen-home.png"
-                     alt="FleetTrack Pro home dashboard"
-                     loading="lazy">
-                <div class="showcase-copy">
-                    <span class="showcase-num">01</span>
-                    <h3 class="showcase-heading">Your fleet<br>at a glance</h3>
-                    <p class="showcase-body">Monthly spend, active alerts, and recent jobs — everything the moment you open the app.</p>
-                </div>
-            </div>
-
-            <div class="showcase-slide"
-                 data-screen="Assets/screen-maintenance.png"
-                 data-alt="FleetTrack Pro maintenance log showing jobs across the fleet">
-                <img class="showcase-mobile-img"
-                     src="Assets/screen-maintenance.png"
-                     alt="FleetTrack Pro maintenance log"
-                     loading="lazy">
-                <div class="showcase-copy">
-                    <span class="showcase-num">02</span>
-                    <h3 class="showcase-heading">Maintenance,<br>logged</h3>
-                    <p class="showcase-body">Every job across the fleet with costs and status. Grouped by vehicle, filterable by date.</p>
-                </div>
-            </div>
-
-            <div class="showcase-slide"
-                 data-screen="Assets/screen-vehicle-detail.png"
-                 data-alt="FleetTrack Pro vehicle detail screen showing costs and service history">
-                <img class="showcase-mobile-img"
-                     src="Assets/screen-vehicle-detail.png"
-                     alt="FleetTrack Pro vehicle detail"
-                     loading="lazy">
-                <div class="showcase-copy">
-                    <span class="showcase-num">03</span>
-                    <h3 class="showcase-heading">Full vehicle<br>history</h3>
-                    <p class="showcase-body">Costs, odometer, compliance dates, and service history — all in one screen per vehicle.</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
+<div class="container">
+<div class="section-header" data-reveal="">
+<span class="section-label">See it in action</span>
+<h2 class="section-title">Built for real fleets</h2>
+<p class="section-subtitle">Every screen from the live app, running on real vehicles at <a href="https://openshell.com.au/" rel="noopener noreferrer" target="_blank">Open Shell Adventures</a>.</p>
+</div>
+</div>
+<div class="showcase-track">
+<!-- Sticky phone (desktop) -->
+<div aria-hidden="true" class="showcase-phone-col">
+<div class="showcase-phone-wrap">
+<div class="showcase-phone-glow"></div>
+<img alt="FleetTrack Pro app screen" class="showcase-phone-img" height="1145" id="showcaseScreen" loading="lazy" src="Assets/screen-home.png" width="931"/>
+</div>
+</div>
+<!-- Scrolling copy slides -->
+<div class="showcase-slides-col">
+<div class="showcase-slide" data-alt="FleetTrack Pro home dashboard showing fleet overview and monthly spend" data-screen="Assets/screen-home.png">
+<img alt="FleetTrack Pro home dashboard" class="showcase-mobile-img" loading="lazy" src="Assets/screen-home.png"/>
+<div class="showcase-copy">
+<span class="showcase-num">01</span>
+<h3 class="showcase-heading">Your fleet<br/>at a glance</h3>
+<p class="showcase-body">Monthly spend, active alerts, and recent jobs — everything the moment you open the app.</p>
+</div>
+</div>
+<div class="showcase-slide" data-alt="FleetTrack Pro maintenance log showing jobs across the fleet" data-screen="Assets/screen-maintenance.png">
+<img alt="FleetTrack Pro maintenance log" class="showcase-mobile-img" loading="lazy" src="Assets/screen-maintenance.png"/>
+<div class="showcase-copy">
+<span class="showcase-num">02</span>
+<h3 class="showcase-heading">Maintenance,<br/>logged</h3>
+<p class="showcase-body">Every job across the fleet with costs and status. Grouped by vehicle, filterable by date.</p>
+</div>
+</div>
+<div class="showcase-slide" data-alt="FleetTrack Pro vehicle detail screen showing costs and service history" data-screen="Assets/screen-vehicle-detail.png">
+<img alt="FleetTrack Pro vehicle detail" class="showcase-mobile-img" loading="lazy" src="Assets/screen-vehicle-detail.png"/>
+<div class="showcase-copy">
+<span class="showcase-num">03</span>
+<h3 class="showcase-heading">Full vehicle<br/>history</h3>
+<p class="showcase-body">Costs, odometer, compliance dates, and service history — all in one screen per vehicle.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- =========================================================
      SCREENSHOT GALLERY
      ========================================================= -->
 <section class="screenshots" id="screenshots">
-    <div class="container">
-        <div class="section-header" data-reveal>
-            <span class="section-label">See it in action</span>
-            <h2 class="section-title">Real screens. Real fleet. Real data.</h2>
-            <p class="section-subtitle">Every screenshot is from the live app, running on real vehicles at Open Shell Adventures.</p>
-        </div>
-
-        <div class="screenshots-grid">
-
-            <div class="screenshot-item" data-reveal data-reveal-delay="0">
-                <div class="gallery-phone-outer">
-                    <div class="phone-glow"></div>
-                    <div class="phone-frame gallery-phone-frame">
-                        <div class="phone-notch"></div>
-                        <img src="Assets/ss2.jpeg"
-                             alt="Vehicle detail screen showing Oyster MK 2 Ford Ranger with compliance and maintenance history"
-                             class="phone-screenshot"
-                             loading="lazy">
-                        <div class="phone-home-bar"></div>
-                    </div>
-                </div>
-                <div class="screenshot-caption">
-                    <strong class="caption-heading">Every vehicle, one screen</strong>
-                    <p class="caption-body">Service history, compliance, costs, and odometer — all in one place per vehicle.</p>
-                </div>
-            </div>
-
-            <div class="screenshot-item" data-reveal data-reveal-delay="100">
-                <div class="gallery-phone-outer">
-                    <div class="phone-glow"></div>
-                    <div class="phone-frame gallery-phone-frame">
-                        <div class="phone-notch"></div>
-                        <img src="Assets/ss4.jpeg"
-                             alt="Service and maintenance tab showing completed jobs for Oyster MK 2 with dates, kilometres and costs"
-                             class="phone-screenshot"
-                             loading="lazy">
-                        <div class="phone-home-bar"></div>
-                    </div>
-                </div>
-                <div class="screenshot-caption">
-                    <strong class="caption-heading">Maintenance, logged.</strong>
-                    <p class="caption-body">Every job tracked with date, kilometres, cost, and completion status. Grouped by vehicle, sortable by status.</p>
-                </div>
-            </div>
-
-            <div class="screenshot-item" data-reveal data-reveal-delay="200">
-                <div class="gallery-phone-outer">
-                    <div class="phone-glow"></div>
-                    <div class="phone-frame gallery-phone-frame">
-                        <div class="phone-notch"></div>
-                        <img src="Assets/ss6.jpeg"
-                             alt="Vehicle detail screen showing Oyster MK 1 Toyota Hilux with registration compliance OK and expiry date"
-                             class="phone-screenshot"
-                             loading="lazy">
-                        <div class="phone-home-bar"></div>
-                    </div>
-                </div>
-                <div class="screenshot-caption">
-                    <strong class="caption-heading">Compliance, sorted.</strong>
-                    <p class="caption-body">Registration and insurance expiry dates tracked per vehicle. Mark renewed in one tap.</p>
-                </div>
-            </div>
-
-            <div class="screenshot-item" data-reveal data-reveal-delay="300">
-                <div class="gallery-phone-outer">
-                    <div class="phone-glow"></div>
-                    <div class="phone-frame gallery-phone-frame">
-                        <div class="phone-notch"></div>
-                        <img src="Assets/ss7.jpeg"
-                             alt="PDF report period selector showing quarterly presets and Financial Year option for Australian businesses"
-                             class="phone-screenshot"
-                             loading="lazy">
-                        <div class="phone-home-bar"></div>
-                    </div>
-                </div>
-                <div class="screenshot-caption">
-                    <strong class="caption-heading">Reports in seconds.</strong>
-                    <p class="caption-body">Branded PDF reports for any quarter, financial year, or custom date range. Ready for your accountant.</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
+<div class="container">
+<div class="section-header" data-reveal="">
+<span class="section-label">See it in action</span>
+<h2 class="section-title">Real screens. Real fleet. Real data.</h2>
+<p class="section-subtitle">Every screenshot is from the live app, running on real vehicles at <a href="https://openshell.com.au/" rel="noopener noreferrer" target="_blank">Open Shell Adventures</a>.</p>
+</div>
+<div class="screenshots-grid">
+<div class="screenshot-item" data-reveal="" data-reveal-delay="0">
+<div class="gallery-phone-outer">
+<div class="phone-glow"></div>
+<div class="phone-frame gallery-phone-frame">
+<div class="phone-notch"></div>
+<img alt="Vehicle detail screen showing Oyster MK 2 Ford Ranger with compliance and maintenance history" class="phone-screenshot" loading="lazy" src="Assets/ss2.jpeg"/>
+<div class="phone-home-bar"></div>
+</div>
+</div>
+<div class="screenshot-caption">
+<strong class="caption-heading">Every vehicle, one screen</strong>
+<p class="caption-body">Service history, compliance, costs, and odometer — all in one place per vehicle.</p>
+</div>
+</div>
+<div class="screenshot-item" data-reveal="" data-reveal-delay="100">
+<div class="gallery-phone-outer">
+<div class="phone-glow"></div>
+<div class="phone-frame gallery-phone-frame">
+<div class="phone-notch"></div>
+<img alt="Service and maintenance tab showing completed jobs for Oyster MK 2 with dates, kilometres and costs" class="phone-screenshot" loading="lazy" src="Assets/ss4.jpeg"/>
+<div class="phone-home-bar"></div>
+</div>
+</div>
+<div class="screenshot-caption">
+<strong class="caption-heading">Maintenance, logged.</strong>
+<p class="caption-body">Every job tracked with date, kilometres, cost, and completion status. Grouped by vehicle, sortable by status.</p>
+</div>
+</div>
+<div class="screenshot-item" data-reveal="" data-reveal-delay="200">
+<div class="gallery-phone-outer">
+<div class="phone-glow"></div>
+<div class="phone-frame gallery-phone-frame">
+<div class="phone-notch"></div>
+<img alt="Vehicle detail screen showing Oyster MK 1 Toyota Hilux with registration compliance OK and expiry date" class="phone-screenshot" loading="lazy" src="Assets/ss6.jpeg"/>
+<div class="phone-home-bar"></div>
+</div>
+</div>
+<div class="screenshot-caption">
+<strong class="caption-heading">Compliance, sorted.</strong>
+<p class="caption-body">Registration and insurance expiry dates tracked per vehicle. Mark renewed in one tap.</p>
+</div>
+</div>
+<div class="screenshot-item" data-reveal="" data-reveal-delay="300">
+<div class="gallery-phone-outer">
+<div class="phone-glow"></div>
+<div class="phone-frame gallery-phone-frame">
+<div class="phone-notch"></div>
+<img alt="PDF report period selector showing quarterly presets and Financial Year option for Australian businesses" class="phone-screenshot" loading="lazy" src="Assets/ss7.jpeg"/>
+<div class="phone-home-bar"></div>
+</div>
+</div>
+<div class="screenshot-caption">
+<strong class="caption-heading">Reports in seconds.</strong>
+<p class="caption-body">Branded PDF reports for any quarter, financial year, or custom date range. Ready for your accountant.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- =========================================================
      PRICING
      ========================================================= -->
 <section class="pricing" id="pricing">
-    <div class="container">
-        <div class="section-header" data-reveal>
-            <span class="section-label">Pricing</span>
-            <h2 class="section-title">Simple, honest pricing</h2>
-            <p class="section-subtitle">No contracts. No hidden fees. Cancel any time. Annual plans available — 2 months free.</p>
+<div class="container">
+<div class="section-header" data-reveal="">
+<span class="section-label">Pricing</span>
+<h2 class="section-title">Simple, honest pricing</h2>
+<p class="section-subtitle">No contracts. No hidden fees. Cancel any time. Annual plans available — 2 months free.</p>
+</div>
+<div class="pricing-trial-banner" data-reveal="">
+<strong>14-day free trial of Professional tier on every new account. No credit card required.</strong> After the trial, your account auto-downgrades to Free — your data stays.
         </div>
-
-        <div class="pricing-trial-banner" data-reveal>
-            <strong>14-day free trial of Professional tier on every new account. No credit card required.</strong> After the trial, your account auto-downgrades to Free — your data stays.
-        </div>
-
-        <div class="pricing-grid">
-
-            <div class="pricing-card" data-reveal data-reveal-delay="0">
-                <div class="pricing-tier">Free</div>
-                <div class="pricing-price">
-                    <span class="price-currency">$</span>
-                    <span class="price-amount">0</span>
-                    <span class="price-period">/mo</span>
-                </div>
-                <div class="pricing-vehicles">Up to 3 vehicles &middot; Try it forever, no card required</div>
-                <ul class="pricing-features">
-                    <li><span class="check"></span> AI receipt scanning (5 scans/month)</li>
-                    <li><span class="check"></span> GPS trip logging</li>
-                    <li><span class="check"></span> Service interval alerts</li>
-                    <li><span class="check"></span> Mobile app (Android)</li>
-                    <li><span class="check"></span> 2 user accounts</li>
-                    <li><span class="check"></span> 6 months data history</li>
-                    <li><span class="check"></span> PDF reports (single vehicle only)</li>
-                    <li><span class="check"></span> Community support</li>
-                </ul>
-                <a href="#waitlist" class="btn btn-outline btn-full">Join the waitlist</a>
-            </div>
-
-            <div class="pricing-card" data-reveal data-reveal-delay="80">
-                <div class="pricing-tier">Starter</div>
-                <div class="pricing-price">
-                    <span class="price-currency">$</span>
-                    <span class="price-amount">19</span>
-                    <span class="price-period">/mo</span>
-                </div>
-                <div class="pricing-vehicles">Up to 10 vehicles</div>
-                <ul class="pricing-features">
-                    <li><span class="check"></span> AI receipt scanning (unlimited)</li>
-                    <li><span class="check"></span> GPS trip logging</li>
-                    <li><span class="check"></span> Service interval alerts</li>
-                    <li><span class="check"></span> Mobile app (Android)</li>
-                    <li><span class="check"></span> 5 user accounts</li>
-                    <li><span class="check"></span> 6 months data history</li>
-                    <li><span class="check"></span> Email support</li>
-                </ul>
-                <a href="#waitlist" class="btn btn-outline btn-full">Join the waitlist</a>
-            </div>
-
-            <div class="pricing-card pricing-card--featured" data-reveal data-reveal-delay="160">
-                <div class="pricing-badge">Most Popular</div>
-                <div class="pricing-tier">Professional</div>
-                <div class="pricing-price">
-                    <span class="price-currency">$</span>
-                    <span class="price-amount">49</span>
-                    <span class="price-period">/mo</span>
-                </div>
-                <div class="pricing-vehicles">Up to 30 vehicles</div>
-                <ul class="pricing-features">
-                    <li><span class="check"></span> Everything in Starter</li>
-                    <li><span class="check"></span> AI receipt scanning (unlimited)</li>
-                    <li><span class="check"></span> PDF reports &amp; exports</li>
-                    <li><span class="check"></span> Compliance management</li>
-                    <li><span class="check"></span> Multi-user roles (15 users)</li>
-                    <li><span class="check"></span> Unlimited data history</li>
-                    <li><span class="check"></span> Priority support</li>
-                    <li><span class="check"></span> Data export (CSV, PDF)</li>
-                </ul>
-                <a href="#waitlist" class="btn btn-primary btn-full">Join the waitlist</a>
-            </div>
-
-            <div class="pricing-card" data-reveal data-reveal-delay="240">
-                <div class="pricing-tier">Enterprise</div>
-                <div class="pricing-price">
-                    <span class="price-currency">$</span>
-                    <span class="price-amount">99</span>
-                    <span class="price-period">+/mo</span>
-                </div>
-                <div class="pricing-vehicles">Up to 75 vehicles</div>
-                <ul class="pricing-features">
-                    <li><span class="check"></span> Everything in Professional</li>
-                    <li><span class="check"></span> Up to 25 users &amp; roles</li>
-                    <li><span class="check"></span> Custom reporting</li>
-                    <li><span class="check"></span> API access</li>
-                    <li><span class="check"></span> Custom integrations</li>
-                    <li><span class="check"></span> Dedicated account manager</li>
-                    <li><span class="check"></span> SLA support</li>
-                </ul>
-                <a href="mailto:support@fleettrackpro.com.au" class="btn btn-outline btn-full">Contact Sales</a>
-            </div>
-
-        </div>
-
-        <div class="pricing-enterprise-plus" data-reveal>
-            <strong>Enterprise+ &mdash; need more than 75 vehicles?</strong> We work with larger fleets on a custom basis.
+<div class="pricing-grid">
+<div class="pricing-card" data-reveal="" data-reveal-delay="0">
+<div class="pricing-tier">Free</div>
+<div class="pricing-price">
+<span class="price-currency">$</span>
+<span class="price-amount">0</span>
+<span class="price-period">/mo</span>
+</div>
+<div class="pricing-vehicles">Up to 3 vehicles · Try it forever, no card required</div>
+<ul class="pricing-features">
+<li><span class="check"></span> AI receipt scanning (5 scans/month)</li>
+<li><span class="check"></span> GPS trip logging</li>
+<li><span class="check"></span> Service interval alerts</li>
+<li><span class="check"></span> Mobile app (Android)</li>
+<li><span class="check"></span> 2 user accounts</li>
+<li><span class="check"></span> 6 months data history</li>
+<li><span class="check"></span> PDF reports (single vehicle only)</li>
+<li><span class="check"></span> Community support</li>
+</ul>
+<a class="btn btn-outline btn-full" href="#waitlist">Join the waitlist</a>
+</div>
+<div class="pricing-card" data-reveal="" data-reveal-delay="80">
+<div class="pricing-tier">Starter</div>
+<div class="pricing-price">
+<span class="price-currency">$</span>
+<span class="price-amount">19</span>
+<span class="price-period">/mo</span>
+</div>
+<div class="pricing-vehicles">Up to 10 vehicles</div>
+<ul class="pricing-features">
+<li><span class="check"></span> AI receipt scanning (unlimited)</li>
+<li><span class="check"></span> GPS trip logging</li>
+<li><span class="check"></span> Service interval alerts</li>
+<li><span class="check"></span> Mobile app (Android)</li>
+<li><span class="check"></span> 5 user accounts</li>
+<li><span class="check"></span> 6 months data history</li>
+<li><span class="check"></span> Email support</li>
+</ul>
+<a class="btn btn-outline btn-full" href="#waitlist">Join the waitlist</a>
+</div>
+<div class="pricing-card pricing-card--featured" data-reveal="" data-reveal-delay="160">
+<div class="pricing-badge">Most Popular</div>
+<div class="pricing-tier">Professional</div>
+<div class="pricing-price">
+<span class="price-currency">$</span>
+<span class="price-amount">49</span>
+<span class="price-period">/mo</span>
+</div>
+<div class="pricing-vehicles">Up to 30 vehicles</div>
+<ul class="pricing-features">
+<li><span class="check"></span> Everything in Starter</li>
+<li><span class="check"></span> AI receipt scanning (unlimited)</li>
+<li><span class="check"></span> PDF reports &amp; exports</li>
+<li><span class="check"></span> Compliance management</li>
+<li><span class="check"></span> Multi-user roles (15 users)</li>
+<li><span class="check"></span> Unlimited data history</li>
+<li><span class="check"></span> Priority support</li>
+<li><span class="check"></span> Data export (CSV, PDF)</li>
+</ul>
+<a class="btn btn-primary btn-full" href="#waitlist">Join the waitlist</a>
+</div>
+<div class="pricing-card" data-reveal="" data-reveal-delay="240">
+<div class="pricing-tier">Enterprise</div>
+<div class="pricing-price">
+<span class="price-currency">$</span>
+<span class="price-amount">99</span>
+<span class="price-period">+/mo</span>
+</div>
+<div class="pricing-vehicles">Up to 75 vehicles</div>
+<ul class="pricing-features">
+<li><span class="check"></span> Everything in Professional</li>
+<li><span class="check"></span> Up to 25 users &amp; roles</li>
+<li><span class="check"></span> Custom reporting</li>
+<li><span class="check"></span> API access</li>
+<li><span class="check"></span> Custom integrations</li>
+<li><span class="check"></span> Dedicated account manager</li>
+<li><span class="check"></span> SLA support</li>
+</ul>
+<a class="btn btn-outline btn-full" href="mailto:support@fleettrackpro.com.au">Contact Sales</a>
+</div>
+</div>
+<div class="pricing-enterprise-plus" data-reveal="">
+<strong>Enterprise+ — need more than 75 vehicles?</strong> We work with larger fleets on a custom basis.
             <a href="mailto:support@fleettrackpro.com.au?subject=Enterprise%2B+Enquiry">Contact us</a> to discuss your requirements.
         </div>
-
-        <p class="pricing-note" data-reveal>All prices in AUD, ex. GST. Billed monthly. No setup fees.<br>Pricing locked in for Founding Members at launch.</p>
-    </div>
+<p class="pricing-note" data-reveal="">All prices in AUD, ex. GST. Billed monthly. No setup fees.<br/>Pricing locked in for Founding Members at launch.</p>
+</div>
 </section>
-
 <!-- =========================================================
      FOUNDER STORY
      ========================================================= -->
 <section class="testimonials" id="testimonials">
-    <div class="container">
-        <div class="section-header" data-reveal>
-            <span class="section-label">The story</span>
-            <h2 class="section-title">Why we built FleetTrack Pro</h2>
-        </div>
-
-        <div class="founder-story" data-reveal>
-            <div class="founder-body">
-                <p>FleetTrack Pro started as an internal tool for Open Shell Adventures — a Perth-based 4WD adventure hire business. After years of juggling spreadsheets, paper service logs, and three different apps that almost did the job, we built something that actually fits how a small fleet operator works.</p>
-                <p>Every feature in FleetTrack Pro exists because we needed it ourselves. We use it every day on our own vehicles before we ask anyone else to trust it with theirs. That's the standard.</p>
-            </div>
-            <div class="founding-members-box">
-                <h3 class="founding-title">Become a Founding Member</h3>
-                <p class="founding-body">Be one of the first 100 operators on FleetTrack Pro and lock in 50% off any paid plan — forever.</p>
-                <a href="#waitlist" class="btn btn-primary">Join the waitlist</a>
-            </div>
-        </div>
-    </div>
+<div class="container">
+<div class="section-header" data-reveal="">
+<span class="section-label">The story</span>
+<h2 class="section-title">Why we built FleetTrack Pro</h2>
+</div>
+<div class="founder-story" data-reveal="">
+<div class="founder-body">
+<p>FleetTrack Pro started as an internal tool for <a href="https://openshell.com.au/" rel="noopener noreferrer" target="_blank">Open Shell Adventures</a> — a Perth-based 4WD adventure hire business. After years of juggling spreadsheets, paper service logs, and three different apps that almost did the job, we built something that actually fits how a small fleet operator works.</p>
+<p>Every feature in FleetTrack Pro exists because we needed it ourselves. We use it every day on our own vehicles before we ask anyone else to trust it with theirs. That's the standard.</p>
+</div>
+<div class="founding-members-box">
+<h3 class="founding-title">Become a Founding Member</h3>
+<p class="founding-body">Be one of the first 100 operators on FleetTrack Pro and lock in 50% off any paid plan — forever.</p>
+<a class="btn btn-primary" href="#waitlist">Join the waitlist</a>
+</div>
+</div>
+</div>
 </section>
-
 <!-- =========================================================
      WAITLIST
      ========================================================= -->
 <section class="waitlist" id="waitlist">
-    <div class="container">
-        <div class="section-header" data-reveal>
-            <span class="section-label">Early access</span>
-            <h2 class="section-title">Be first in line</h2>
-            <p class="section-subtitle">Drop your email and we'll let you know the moment FleetTrack Pro is live on Google Play. Founding Members get 50% off any paid plan — forever.</p>
-        </div>
-
-        <!-- TODO: replace with proper form backend before launch -->
-        <form class="waitlist-form" data-reveal action="mailto:support@fleettrackpro.com.au" method="post" enctype="text/plain">
-            <div class="waitlist-input-row">
-                <input type="email" name="email" placeholder="your@email.com.au" required class="waitlist-input">
-                <button type="submit" class="btn btn-primary">Join the waitlist</button>
-            </div>
-            <p class="waitlist-disclaimer">No spam. We'll email you once at launch and never share your address.</p>
-        </form>
-    </div>
+<div class="container">
+<div class="section-header" data-reveal="">
+<span class="section-label">Early access</span>
+<h2 class="section-title">Be first in line</h2>
+<p class="section-subtitle">Drop your email and we'll let you know the moment FleetTrack Pro is live on Google Play. Founding Members get 50% off any paid plan — forever.</p>
+</div>
+<!-- TODO: replace with proper form backend before launch -->
+<form action="mailto:support@fleettrackpro.com.au" class="waitlist-form" data-reveal="" enctype="text/plain" method="post">
+<div class="waitlist-input-row">
+<input class="waitlist-input" name="email" placeholder="your@email.com.au" required="" type="email"/>
+<button class="btn btn-primary" type="submit">Join the waitlist</button>
+</div>
+<p class="waitlist-disclaimer">No spam. We'll email you once at launch and never share your address.</p>
+</form>
+</div>
 </section>
-
 <!-- =========================================================
      FOOTER
      ========================================================= -->
 <footer class="footer" id="contact">
-    <div class="container">
-        <div class="footer-top">
-            <div class="footer-brand">
-                <a href="/" class="nav-logo footer-logo">
-                    <img src="Assets/logo-mark.png" alt="FleetTrack Pro" class="logo-mark">
-                    <span class="logo-wordmark">FleetTrack <em>Pro</em></span>
-                </a>
-                <p class="footer-tagline">Fleet management built for the real world.</p>
-                <p class="footer-sub">Proudly Australian. Built for Australian fleet operators.</p>
-            </div>
-
-            <div class="footer-nav-group">
-                <div class="footer-col">
-                    <h4 class="footer-col-title">Product</h4>
-                    <ul>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#testimonials">Our story</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4 class="footer-col-title">Company</h4>
-                    <ul>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="mailto:support@fleettrackpro.com.au">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4 class="footer-col-title">Resources</h4>
-                    <ul>
-                        <li><a href="alternatives/fleetio-alternative-australia.html">Fleetio Alternative Australia</a></li>
-                        <li><a href="use-cases/4wd-hire-fleet-management.html">Fleet Management for 4WD Hire</a></li>
-                        <li><a href="guides/best-fleet-maintenance-app-small-fleets.html">Best Fleet Maintenance App</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2026 Nightshift Systems. All rights reserved.</p>
-            <a href="mailto:support@fleettrackpro.com.au" class="footer-email">support@fleettrackpro.com.au</a>
-        </div>
-    </div>
+<div class="container">
+<div class="footer-top">
+<div class="footer-brand">
+<a class="nav-logo footer-logo" href="/">
+<img alt="FleetTrack Pro" class="logo-mark" src="Assets/logo-mark.png"/>
+<span class="logo-wordmark">FleetTrack <em>Pro</em></span>
+</a>
+<p class="footer-tagline">Fleet management built for the real world.</p>
+<p class="footer-sub">Proudly Australian. Built for Australian fleet operators.</p>
+</div>
+<div class="footer-nav-group">
+<div class="footer-col">
+<h4 class="footer-col-title">Product</h4>
+<ul>
+<li><a href="#features">Features</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#testimonials">Our story</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4 class="footer-col-title">Company</h4>
+<ul>
+<li><a href="privacy.html">Privacy Policy</a></li>
+<li><a href="mailto:support@fleettrackpro.com.au">Contact Us</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4 class="footer-col-title">Resources</h4>
+<ul>
+<li><a href="alternatives/fleetio-alternative-australia.html">Fleetio Alternative Australia</a></li>
+<li><a href="use-cases/4wd-hire-fleet-management.html">Fleet Management for 4WD Hire</a></li>
+<li><a href="guides/best-fleet-maintenance-app-small-fleets.html">Best Fleet Maintenance App</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Nightshift Systems. All rights reserved.</p>
+<a class="footer-email" href="mailto:support@fleettrackpro.com.au">support@fleettrackpro.com.au</a>
+</div>
+</div>
 </footer>
-
 <script src="script.js"></script>
 </body>
 </html>
