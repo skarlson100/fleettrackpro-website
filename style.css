@@ -1388,6 +1388,31 @@ h1, h2, h3, h4 {
     color: var(--text-primary);
 }
 
+.pricing-enterprise-plus {
+    background: rgba(139, 92, 246, 0.07);
+    border: 1px solid rgba(139, 92, 246, 0.25);
+    border-radius: var(--radius-md);
+    padding: 16px 24px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.55;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pricing-enterprise-plus strong {
+    color: var(--text-primary);
+}
+
+.pricing-enterprise-plus a {
+    color: #8B5CF6;
+    text-decoration: none;
+}
+
+.pricing-enterprise-plus a:hover {
+    text-decoration: underline;
+}
+
 /* 21. PRICING GRID — 4 TIERS (overrides base 3-column rule)
    ============================================================================= */
 .pricing-grid {
